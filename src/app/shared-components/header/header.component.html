@@ -1,0 +1,14 @@
+<div class="container mx-auto px-4 flex items-center justify-between p-6 bg-white">
+    <div>
+        <a [routerLink]="['/home']">
+            <img src="assets/img/glev-logo.png" alt="Your Logo" class="w-24 h-24">
+        </a>
+    </div>
+    <div class="flex items-center text-black space-x-8 font-courier">
+        <a [routerLink]="['/about']" routerLinkActive="font-bold" class="hover:text-black">à propos</a>
+        <a [routerLink]="['/contact']" routerLinkActive="font-bold" class="hover:text-black">contact</a>
+        <a href="https://www.linkedin.com/in/guillaume-lévesque-b98972129/" target="_blank">
+            <img src="assets/img/linkedin-logo.png" alt="LinkedIn" class="w-14 h-14">
+        </a>
+    </div>
+</div>

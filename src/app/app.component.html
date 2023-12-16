@@ -1,0 +1,21 @@
+<div class="container mx-auto pb-full">
+  <div class="flex flex-col min-h-screen">
+    <div class="flex-grow">
+      <app-header></app-header>
+      <div class="flex justify-center w-full">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <footer class="flex justify-center items-center p-6 bg-white text-black font-courier pt-12">
+      <div class="text-center text-sm">
+          <p>&copy; {{ currentYear }} Guillaume Lévesque</p>
+          <p>514.835.0203 | <a href="mailto:levesque.g@icloud.com">levesque.g@icloud.com</a></p>
+      </div>
+      <a (click)="scrollToTop()" class="fixed right-6 bottom-6 hover:text-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+          </svg>
+      </a>
+  </footer>
+  </div>
+</div>
