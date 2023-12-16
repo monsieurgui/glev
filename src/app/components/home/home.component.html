@@ -1,5 +1,5 @@
 <div class="font-courier flex items-center justify-center pt-[8%] text-center w-full">
-    <span class="terminal-text">Apprendre, c'est affronter les tempêtes de l'ignorance et naviguer sur les vagues de la connaissance, résilient face aux défis, grandissant avec chaque leçon apprise. </span>
+    <span class="terminal-text">{{ "home.phrase" | translate }} </span>
 </div>
 
 <div class="container mx-auto font-courier pt-[8%] pb-8">
@@ -10,7 +10,7 @@
     <a *ngFor="let project of projects" [href]="project.url" target="_blank" class="card shadow-lg p-4 pb-8 pr-8 relative hover:bg-gray-100 transition duration-200">
         <span class="absolute bottom-2 right-2 text-black border border-black py-1 px-2 rounded-full">{{ project.lang }}</span>
         <img src="assets/img/github-logo.png" alt="GitHub Logo" class="w-8 h-8 absolute top-2 left-2">
-        <h3 class="pl-10 pt-6 font-semibold">{{ project.title }}</h3>
-        <p class="pl-10 pt-2">{{ project.description }}</p>
+        <h3 class="pl-10 pt-6 font-semibold">{{ "home." + project.title | translate }}</h3>
+        <p class="pl-10 pt-2">{{ "home." + project.description | translate }}</p>
     </a>
 </div>

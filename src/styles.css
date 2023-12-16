@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

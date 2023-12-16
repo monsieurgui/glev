@@ -1,22 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  constructor(private translate : TranslateService){};
+
+  ngOnInit(): void {
+    this.translate.setDefaultLang('fr');
+    this.translate.use('fr');
+  }
+
   projects = [
-    { title: 'Climb Insight - Frontend', 
-      description: "Frontend en Angular qui fournit une interface utilisateur interactive pour l'inscription, l'organisation de championnats d'escalade, et la consultation en direct des résultats sur mobiles et tablettes.", 
+    { title: 'climbinsight.frontendtitle', 
+      description: "climbinsight.frontenddescription", 
       url: 'https://github.com/monsieurgui/ClimbInsight-frontend',
       lang: 'ts'},
-    { title: 'Climb Insight - Backend', 
-      description: "Backend en Django qui gère l'enregistrement des utilisateurs, l'organisation des championnats d'escalade, et l'affichage en direct des résultats.", 
+    { title: 'climbinsight.backendtitle', 
+      description: "climbinsight.backenddescription", 
       url: 'https://github.com/monsieurgui/ClimbInsight-backend',
       lang: 'python' },
-    { title: 'Game of life', 
-      description: "Jeu fait avec Unity qui simule l'évolution d'une personne grâce à la prise de décisions.", 
+    { title: 'gameoflife.title', 
+      description: "gameoflife.description",
       url: '#',
       lang: 'c++' },
     // Add more projects as needed

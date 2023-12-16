@@ -1,93 +1,97 @@
 <div class="container mx-auto px-4 font-courier">
     <div class="pb-12 flex justify-between items-center">
-        <h1 class="text-3xl">Guillaume Lévesque</h1>
+        <h1 class="text-3xl">guillaume lévesque</h1>
         <p class="text-md font-bold text-black">514.835.0203</p>
     </div>
 
     <div class="flex items-center mb-4">
-        <h2 class="text-2xl uppercase mr-4">EXPÉRIENCES</h2>
+        <h2 class="text-2xl uppercase mr-4">{{ 'experience.title' | translate }}</h2>
         <div class="flex-grow border-b-2 border-gray-300"></div>
     </div>
 
     <div class="mt-4">
-        <h3 class="font-semibold text-sm text-gray-600 uppercase">JUIN 2021 – AUJOURD’HUI</h3>
-        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">ANALYSTE PROGRAMMEUR DESJARDINS</h4>
-        <ul class="list-disc ml-5 text-sm text-black">
-            <li>Spécialisé en Java (majoritairement Spring Boot), développement de services REST.</li>
-            <li>Développement de services d’interaction et d’intégration DevOps (CI/CD -> Docker/Docker Swarm, Concourse PCF Kubernetes), analyse de sécurité (crypto), automatisation de tests.</li>
+        <h3 class="font-semibold text-sm text-gray-600 uppercase">{{ 'raic.period' | translate }}</h3>
+        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">{{ 'raic.role' | translate }}</h4>
+        <ul class="list-disc ml-5 text-sm text-black lowercase">
+            <li>{{ 'raic.details[0]' | translate }}</li>
+            <li>{{ 'raic.details[1]' | translate }}</li>
         </ul>
     </div>
 
     <div class="mt-8">
-        <h3 class="font-semibold text-sm text-gray-600 uppercase">NOVEMBRE 2019 – JUIN 2021</h3>
-        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">DÉVELOPPEUR DE LOGICIEL ET DEVOPS CODE3</h4>
-        <ul class="list-disc ml-5 text-sm text-black">
-            <li>Mise en place de CI/CD, installations et entretiens de serveurs (Linux et Mac), développement web (Spring Boot et Liferay).</li>
-            <li>Développement d’outils internes et de logiciel d’analytique. Analyse de sécurité et mise à jour de sécurité.</li>
+        <h3 class="font-semibold text-sm text-gray-600 uppercase">{{ 'code3.period' | translate }}</h3>
+        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">{{ 'code3.role' | translate }}</h4>
+        <ul class="list-disc ml-5 text-sm text-black lowercase">
+            <li>{{ 'code3.details[0]' | translate }}</li>
+            <li>{{ 'code3.details[1]' | translate }}</li>
         </ul>
     </div>
 
     <div class="mt-8">
-        <h3 class="font-semibold text-sm text-gray-600 uppercase">MAI 2014 – NOVEMBRE 2019</h3>
-        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">GENIUS APPLE</h4>
-        <ul class="list-disc ml-5 text-sm text-black">
-            <li>Service d’après vente, gestion du plancher (Genius Bar), réparation d’appareil (iPhone, Mac),
-                formateur.</li>
+        <h3 class="font-semibold text-sm text-gray-600 uppercase">{{ 'opq.period' | translate }}</h3>
+        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">{{ 'opq.role' | translate }}</h4>
+        <ul class="list-disc ml-5 text-sm text-black lowercase">
+            <li>{{ 'opq.details[0]' | translate }}</li>
+        </ul>
+    </div>
+
+    <div class="mt-8">
+        <h3 class="font-semibold text-sm text-gray-600 uppercase">{{ 'desjardins.period' | translate }}</h3>
+        <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">{{ 'desjardins.role' | translate }}</h4>
+        <ul class="list-disc ml-5 text-sm text-black lowercase">
+            <li>{{ 'desjardins.details[0]' | translate }}</li>
+            <li>{{ 'desjardins.details[1]' | translate }}</li>
         </ul>
     </div>
 
 
     <div class="flex items-center mb-4 mt-12">
-        <h2 class="text-2xl uppercase mr-4">ÉDUCATION</h2>
+        <h2 class="text-2xl uppercase mr-4">{{ 'education.title' | translate }}</h2>
         <div class="flex-grow border-b-2 border-gray-300"></div>
     </div>
 
     <div class="flex items-start mb-4 mt-4 space-x-8">
         <div class="w-1/2">
-            <h3 class="font-semibold text-sm text-gray-600 uppercase">2020</h3>
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">BACCALAURÉAT EN INFORMATIQUE</h4>
-            <p class="text-sm text-black">Université de Montréal, Montréal, QC</p>
+            <h3 class="font-semibold text-sm text-gray-600 uppercase">{{ 'uqam.year' | translate }}</h3>
+            <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">{{ 'uqam.degree' | translate }}</h4>
+            <p class="text-sm text-black lowercase">{{ 'uqam.institution' | translate }}</p>
         </div>
     
         <div class="w-1/2">
-            <h3 class="font-semibold text-sm text-gray-600 uppercase">2015</h3>
-            <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">DEC EN SCIENCES INFORMATIQUES</h4>
-            <p class="text-sm text-black">Cégep de Sherbrooke, Sherbrooke, QC</p>
+            <h3 class="font-semibold text-sm text-gray-600 uppercase">{{ 'sthya.year' | translate }}</h3>
+            <h4 class="text-xl font-semibold mb-2 text-gray-900 uppercase">{{ 'sthya.degree' | translate }}</h4>
+            <p class="text-sm text-black lowercase">{{ 'sthya.institution' | translate }}</p>
         </div>
     </div>
 
 
     <div class="flex items-center mb-4 mt-12">
-        <h2 class="text-2xl uppercase mr-4">COMPÉTENCES TECHNIQUES</h2>
+        <h2 class="text-2xl uppercase mr-4">{{ 'skills.title' | translate }}</h2>
         <div class="flex-grow border-b-2 border-gray-300"></div>
     </div>
     
     <div class="flex flex-wrap mt-4">
         <div class="w-1/2">
             <ul class="list-disc ml-5 text-sm text-black">
-                <li class="font-bold">java</li>
-                <li class="font-bold">spring</li>
-                <li class="font-bold">angular</li>
-                <li class="font-bold">python</li>
-                <li class="font-bold">web (js, ts, css, html, etc)</li>
-                <li class="font-bold">devops (CI/CD, docker, jenkins, ansible, etc)</li>
+                <li class="font-bold">{{ 'skills.java' | translate }}</li>
+                <li class="font-bold">{{ 'skills.spring' | translate }}</li>
+                <li class="font-bold">{{ 'skills.angular' | translate }}</li>
+                <li class="font-bold">{{ 'skills.python' | translate }}</li>
+                <li class="font-bold">{{ 'skills.web' | translate }}</li>
+                <li class="font-bold">{{ 'skills.devops' | translate }}</li>
             </ul>
         </div>
         <div class="w-1/2">
             <ul class="list-disc ml-5 text-sm text-black">
-                <li>php</li>
-                <li>css (tailwind)</li>
-                <li>mysql, oracle, postgres, mongodb, azure</li>
-                <li>c++</li>
-                <li>linux, mac, windows</li>
-                <li>git</li>
-                <li>etc</li>
+                <li>{{ 'skills.php' | translate }}</li>
+                <li>{{ 'skills.css' | translate }}</li>
+                <li>{{ 'skills.databases' | translate }}</li>
+                <li>{{ 'skills.cpp' | translate }}</li>
+                <li>{{ 'skills.os' | translate }}</li>
+                <li>{{ 'skills.git' | translate }}</li>
+                <li>{{ 'skills.etc' | translate }}</li>
             </ul>
         </div>
-    </div>
-
-    <div class="mt-4 mb-8 text-sm italic">
-        <p>(gauche: <span class="font-bold">maîtrisé</span>, droite: connu)</p>
     </div>
 
     <div class="flex items-center mb-4 mt-12">

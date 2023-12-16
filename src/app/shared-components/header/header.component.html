@@ -10,5 +10,8 @@
         <a href="https://www.linkedin.com/in/guillaume-lévesque-b98972129/" target="_blank">
             <img src="assets/img/linkedin-logo.png" alt="LinkedIn" class="w-14 h-14">
         </a>
+        <button (click)="switchLanguage()">
+            {{ translate.currentLang === 'en' ? 'fr' : 'en' }}
+        </button>
     </div>
 </div>

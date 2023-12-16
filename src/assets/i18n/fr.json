@@ -1,0 +1,74 @@
+{
+    "title": "Guillaume Lévesque - Page personnelle",
+    "experience.title" : "expérience",
+    "menu" : {
+      "home": "Accueil",
+      "about": "à propos",
+      "projects": "projets",
+      "contact": "contact"
+  },
+    "personalinfo.name": "guillaume lévesque",
+    "personalinfo.contact": "514.835.0203",
+    "raic.period": "juin 2021 – aujourd’hui",
+    "raic.role": "analyste programmeur desjardins",
+    "raic.details": [
+      "spécialisé en java (majoritairement spring boot), développement de services rest.",
+      "développement de services d’interaction et d’intégration devops (ci/cd -> docker/docker swarm, concourse pcf kubernetes), analyse de sécurité (crypto), automatisation de tests."
+    ],
+    "code3.period": "novembre 2019 – juin 2021",
+    "code3.role": "développeur de logiciel et devops code3",
+    "code3.details": [
+      "mise en place de ci/cd, installations et entretiens de serveurs (linux et mac), développement web (spring boot et liferay).",
+      "développement d’outils internes et de logiciel d’analytique. analyse de sécurité et mise à jour de sécurité."
+    ],
+    "opq.period": "mai 2014 – novembre 2019",
+    "opq.role": "genius apple",
+    "opq.details": [
+      "service d’après vente, gestion du plancher (genius bar), réparation d’appareil (iphone, mac), formateur."
+    ],
+    "desjardins.period": "2022 - aujourd'hui",
+    "desjardins.role": "desjardins – consentement",
+    "desjardins.details": [
+      "développement d'un système de gestion de données à haute disponibilité et hyper efficace pour l'ensemble du mouvement desjardins.",
+      "réalisations incluent le développement d'une suite d'applications, web et api, l'analyse technique et fonctionnelle des besoins métier, la création d'un système de métriques, de traitements par lots, de systèmes rabbitmq, etc."
+    ],
+    "education.title": "éducation",
+    "uqam.year": "2020",
+    "uqam.degree": "baccalauréat en informatique",
+    "uqam.institution": "université de montréal, montréal, qc",
+    "sthya.year": "2015",
+    "sthya.degree": "dec en sciences informatiques",
+    "sthya.institution": "cégep de sherbrooke, sherbrooke, qc",
+    "skills.title": "compétences techniques",
+    "skills.java": "java",
+    "skills.spring": "spring",
+    "skills.angular": "angular",
+    "skills.python": "python",
+    "skills.web": "web (js, ts, css, html, etc)",
+    "skills.devops": "devops (ci/cd, docker, jenkins, ansible, etc)",
+    "skills.php": "php",
+    "skills.css": "css (tailwind)",
+    "skills.databases": "mysql, oracle, postgres, mongodb, azure",
+    "skills.cpp": "c++",
+    "skills.os": "linux, mac, windows",
+    "skills.git": "git",
+    "skills.etc": "etc",
+    "contact.title": "contact",
+    "contact.name": "full name",
+    "contact.email": "email",
+    "contact.message": "message",
+    "home" : {
+        "phrase": "apprendre, c'est affronter les tempêtes de l'ignorance et naviguer sur les vagues de la connaissance, résilient face aux défis, grandissant avec chaque leçon apprise. ",
+        "climbinsight": {
+            "frontendtitle" : "Climb Insight - Frontend",
+            "backendtitle" : "Climb Insight - Backend",
+            "frontenddescription" : "frontend en Angular qui fournit une interface utilisateur interactive pour l'inscription, l'organisation de championnats d'escalade, et la consultation en direct des résultats sur mobiles et tablettes.",
+            "backenddescription" : "backend en Django qui gère l'enregistrement des utilisateurs, l'organisation des championnats d'escalade, et l'affichage en direct des résultats."
+        },
+        "gameoflife": {
+            "title" : "Jeu de la vie",
+            "description" : "Projet en cours de démarage qui vise à implémenter un jeu de choix batit avec Unity et C++."
+        }
+    }
+  }
+  
