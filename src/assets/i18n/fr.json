@@ -69,6 +69,22 @@
             "title" : "Jeu de la vie",
             "description" : "Projet en cours de démarage qui vise à implémenter un jeu de choix batit avec Unity et C++."
         }
-    }
+    },
+    "project1.period": "juin 2020 - septembre 2020",
+    "project1.name": "RAIC",
+    "project1.detail1": "Création d’une plateforme web pour le guide des architectes canadiens.",
+    "project1.detail2": "Réalisations incluent le déploiement d’une plateforme Liferay, échange constant avec le client, écriture et déploiement d’un wiki, écriture de scripts pour les administrateurs de système, et écriture de module (portlets) sur demande pour Liferay.",
+    "project2.period": "2020 – 2021",
+    "project2.name": "CODE3 - Billetterie",
+    "project2.detail1": "Façade JIRA pour les clients. Plateforme interagissant avec l’API JIRA pour l’accès aux billets des projets sur la plateforme infonuagique d’Atlassian.",
+    "project2.detail2": "Réalisations incluent le développement en Java 11 avec Spring Boot, architecture de l’application web et de la base de données avec PostgreSQL, écriture d’API REST, utilisation et compréhension de l’API JIRA (et Confluence), et pipeline de déploiement avec Docker Swarm et Jenkins.",
+    "project3.period": "mai 2014 – novembre 2019",
+    "project3.name": "OPQ",
+    "project3.detail1": "Mise à jour de sécurité de la plateforme web en entier, ajout de modules personnalisés et maintenance.",
+    "project3.detail2": "Réalisations incluent l'ajout de cryptages, Google Analytics, module de recherche personnalisé, maintenance du site web, et refactoring du code pour optimisation de performance.",
+    "project4.period": "2022 - aujourd'hui",
+    "project4.name": "Desjardins – Consentement",
+    "project4.detail1": "Développement d'un système de gestion de données à haute disponibilité et hyper efficace pour l'ensemble du Mouvement Desjardins.",
+    "project4.detail2": "Réalisations incluent le développement d'une suite d'applications, web et API, l'analyse technique et fonctionnelle des besoins métier, la création d'un système de métriques, de traitements par lots, de systèmes RabbitMQ, etc."
   }
   
