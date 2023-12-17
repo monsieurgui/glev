@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { Event as RouterEvent, NavigationEnd, Router } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { Dict } from 'src/app/constant/dict';
 
 @Component({
   selector: 'app-home',
@@ -34,10 +35,9 @@ export class HomeComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    this.translate.setDefaultLang('fr');
-    this.translate.use('fr');
+    const randomPhraseKey = Dict.phrases[Math.floor(Math.random() * Dict.phrases.length)];
 
-    this.translate.get('home.phrase').subscribe((translatedPhrase: string) => {
+    this.translate.get(randomPhraseKey).subscribe((translatedPhrase: string) => {
       this.homePhrase = translatedPhrase;
       this.index = 0;
       this.displayedPhrase = '';
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
   
     this.router.events.subscribe((event: RouterEvent) => {
       if (event instanceof NavigationEnd) {
-        this.translate.get('home.phrase').subscribe((translatedPhrase: string) => {
+        this.translate.get(randomPhraseKey).subscribe((translatedPhrase: string) => {
           this.homePhrase = translatedPhrase;
           this.index = 0;
           this.displayedPhrase = '';
