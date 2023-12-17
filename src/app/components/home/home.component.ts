@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Event as RouterEvent, NavigationEnd, Router } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,7 +8,8 @@ import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  constructor(private translate : TranslateService){};
+  constructor(private translate : TranslateService,
+    private router: Router){};
 
   displayedPhrase = '';
   private homePhrase = '';
@@ -35,14 +37,29 @@ export class HomeComponent implements OnInit {
     this.translate.setDefaultLang('fr');
     this.translate.use('fr');
 
-    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.translate.get('home.phrase').subscribe((translatedPhrase: string) => {
-        this.homePhrase = translatedPhrase;
-        this.index = 0;
-        this.displayedPhrase = '';
-        this.typeCharacter();
-      });
+    this.translate.get('home.phrase').subscribe((translatedPhrase: string) => {
+      this.homePhrase = translatedPhrase;
+      this.index = 0;
+      this.displayedPhrase = '';
+      this.typeCharacter();
     });
+  
+    this.router.events.subscribe((event: RouterEvent) => {
+      if (event instanceof NavigationEnd) {
+        this.translate.get('home.phrase').subscribe((translatedPhrase: string) => {
+          this.homePhrase = translatedPhrase;
+          this.index = 0;
+          this.displayedPhrase = '';
+          this.typeCharacter();
+        });
+      }
+    });
+  }
+
+  ngOnChanges(): void {
+    this.index = 0;
+    this.displayedPhrase = '';
+    this.typeCharacter();
   }
 
   private typeCharacter() {

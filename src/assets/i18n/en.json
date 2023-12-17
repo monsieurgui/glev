@@ -90,6 +90,7 @@
     "contact.form.confirmation": "do you want to send the message? (y/N)",    
     "contact.form.prompt1" : "enter your name and press return:",
     "contact.form.prompt2" : "enter your email address and press return:",
-    "contact.form.prompt3" : "enter your message and press return:"
+    "contact.form.prompt3" : "enter your message and press return:",
+    "landingpage": "currently building it..."
   }
   
