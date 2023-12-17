@@ -1,27 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
+import { EmailService } from 'src/app/services/email-service.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
-  contactForm !: FormGroup;
-
-  constructor(private formBuilder: FormBuilder) { }
-
-  ngOnInit(): void {
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
-    });
-  }
-
-  onSubmit(): void {
-    if (this.contactForm && this.contactForm.valid) {
-      console.log(this.contactForm.value);
-    }
-  }
+export class ContactComponent {
+  constructor(private translate: TranslateService) { }
+  
 }

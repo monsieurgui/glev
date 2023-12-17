@@ -4,9 +4,27 @@
             <img src="assets/img/glev-logo.png" alt="Your Logo" class="w-24 h-24">
         </a>
     </div>
-    <div class="flex items-center text-black space-x-8 font-courier">
-        <a [routerLink]="['/about']" routerLinkActive="font-bold" class="hover:text-black">à propos</a>
-        <a [routerLink]="['/contact']" routerLinkActive="font-bold" class="hover:text-black">contact</a>
+    <div class="md:hidden flex items-center justify-between">
+        <button (click)="switchLanguage()" class="p-2">
+            {{ translate.currentLang === 'en' ? 'fr' : 'en' }}
+        </button>
+        <a href="https://www.linkedin.com/in/guillaume-lévesque-b98972129/" target="_blank">
+            <img src="assets/img/linkedin-logo.png" alt="LinkedIn" class="w-14 h-14">
+        </a>
+        <button class="rounded-full border-black p-2 bg-transparent" (click)="menuVisible = !menuVisible">
+            <span *ngIf="!menuVisible" class="border-2 border-black bg-transparent py-1 px-2 rounded-full">+</span>
+            <span *ngIf="menuVisible" class="border-2 border-black bg-transparent py-1 px-2 rounded-full">-</span>
+        </button>
+    </div>
+    <div [class.hidden]="!menuVisible" class="transition transform origin-top-right absolute right-0 mt-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none md:hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+        <div class="py-1" role="none">
+            <a [routerLink]="['/about']" routerLinkActive="font-bold" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">{{ 'menu.about' | translate }}</a>
+            <a [routerLink]="['/contact']" routerLinkActive="font-bold" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">{{ 'menu.contact' | translate }}</a>
+        </div>
+    </div>
+    <div class="hidden md:flex items-center text-black space-x-8 font-courier">
+        <a [routerLink]="['/about']" routerLinkActive="font-bold" class="hover:text-black">{{ 'menu.about' | translate }}</a>
+        <a [routerLink]="['/contact']" routerLinkActive="font-bold" class="hover:text-black">{{ 'menu.contact' | translate }}</a>
         <a href="https://www.linkedin.com/in/guillaume-lévesque-b98972129/" target="_blank">
             <img src="assets/img/linkedin-logo.png" alt="LinkedIn" class="w-14 h-14">
         </a>

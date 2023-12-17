@@ -10,3 +10,26 @@ body {
 .uppercase {
     text-transform: uppercase;
 }
+
+/* Styles for the typing animation text */
+.typing-animation {
+  font-family: 'Courier New', Courier, monospace; /* Example font, you can change it */
+  font-size: 1.2em; /* Example size, adjust as needed */
+}
+
+/* Blinking cursor at the end */
+.blinking-cursor {
+  display: inline-block;
+  vertical-align: middle; /* Align cursor with the baseline of the text */
+  width: 1px;
+  height: 0.9em;
+  background-color: currentColor;
+  margin-left: 1px;
+  animation: blink-animation 1s step-end infinite;
+}
+
+/* Keyframes for blinking animation */
+@keyframes blink-animation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

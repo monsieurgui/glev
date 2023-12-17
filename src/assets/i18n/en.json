@@ -1,6 +1,7 @@
 {
     "title": "Guillaume Lévesque - Personal page",
     "experience.title" : "experience",
+    "projet.title" : "projects",
     "menu" : {
         "home": "home",
         "about": "about",
@@ -11,27 +12,19 @@
     "personalinfo.contact": "514.835.0203",
     "raic.period": "june 2021 – present",
     "raic.role": "analyst programmer at desjardins",
-    "raic.details": [
-      "specialized in java (primarily spring boot), developing rest services.",
-      "development of devops interaction and integration services (ci/cd -> docker/docker swarm, concourse pcf kubernetes), security analysis (crypto), test automation."
-    ],
+    "raic.details1": "specialized in java (primarily spring boot), developing rest services.",
+    "raic.details2": "development of devops interaction and integration services (ci/cd -> docker/docker swarm, concourse pcf kubernetes), security analysis (crypto), test automation.",
     "code3.period": "november 2019 – june 2021",
     "code3.role": "software developer and devops at code3",
-    "code3.details": [
-      "set up of ci/cd, server maintenance and installations (linux and mac), web development (spring boot and liferay).",
-      "development of internal tools and analytics software. security analysis and security updates."
-    ],
+    "code3.details1": "set up of ci/cd, server maintenance and installations (linux and mac), web development (spring boot and liferay).",
+    "code3.details2": "development of internal tools and analytics software. security analysis and security updates.",
     "opq.period": "may 2014 – november 2019",
     "opq.role": "apple genius",
-    "opq.details": [
-      "after-sales service, floor management (genius bar), device repair (iphone, mac), trainer."
-    ],
+    "opq.details1": "after-sales service, floor management (genius bar), device repair (iphone, mac), trainer.",
     "desjardins.period": "2022 - present",
     "desjardins.role": "desjardins – consent",
-    "desjardins.details": [
-      "development of a highly available and highly efficient data management system for the entire desjardins group.",
-      "achievements include the development of a suite of applications, web and api, technical and functional analysis of business needs, creation of a metrics system, batch processing, rabbitmq systems, etc."
-    ],
+    "desjardins.details1": "development of a highly available and highly efficient data management system for the entire desjardins group.",
+    "desjardins.details2": "achievements include the development of a suite of applications, web and api, technical and functional analysis of business needs, creation of a metrics system, batch processing, rabbitmq systems, etc.",
     "education.title": "education",
     "uqam.year": "2020",
     "uqam.degree": "bachelor's degree in computer science",
@@ -69,6 +62,34 @@
           "title": "game of life",
           "description": "a startup project aimed at implementing a choice-based game built with unity and c++."
         }
-      }
+    },
+    "project.title": "Major Projects",
+    "project.env": "Technological Environment",
+    "skills.liferay": "liferay",
+    "skills.oracle": "oracle",
+    "project1.period": "June 2020 - September 2020",
+    "project1.name": "RAIC",
+    "project1.detail1": "Creation of a web platform for the Canadian architects' guide.",
+    "project1.detail2": "Achievements include the deployment of a Liferay platform, constant exchange with the client, writing and deploying a wiki, writing scripts for system administrators, and writing modules (portlets) on demand for Liferay.",
+    "project2.period": "2020 – 2021",
+    "project2.name": "CODE3 - Ticketing",
+    "project2.detail1": "JIRA facade for clients. Platform interacting with the JIRA API for access to project tickets on Atlassian's cloud platform.",
+    "project2.detail2": "Achievements include development in Java 11 with Spring Boot, architecture of the web application and database with PostgreSQL, writing REST APIs, using and understanding the JIRA (and Confluence) API, and deployment pipeline with Docker Swarm and Jenkins.",
+    "project3.period": "May 2014 – November 2019",
+    "project3.name": "OPQ",
+    "project3.detail1": "Security update of the entire web platform, addition of custom modules and maintenance.",
+    "project3.detail2": "Achievements include the addition of encryptions, Google Analytics, custom search module, website maintenance, and code refactoring for performance optimization.",
+    "project4.period": "2022 - present",
+    "project4.name": "Desjardins – Consent",
+    "project4.detail1": "Development of a high availability and highly efficient data management system for the entire Desjardins Group.",
+    "project4.detail2": "Achievements include the development of a suite of applications, web and API, technical and functional analysis of business needs, creation of a metrics system, batch processing, RabbitMQ systems, etc.",
+    "contact.phrase": "Behind Every Challenge Lies a Solution Waiting to Be Discovered. Let's Uncover It Together.",
+    "contact.form.name": "full name",
+    "contact.form.email": "email",
+    "contact.form.message": "message",
+    "contact.form.confirmation": "do you want to send the message? (y/N)",    
+    "contact.form.prompt1" : "enter your name and press return:",
+    "contact.form.prompt2" : "enter your email address and press return:",
+    "contact.form.prompt3" : "enter your message and press return:"
   }
   

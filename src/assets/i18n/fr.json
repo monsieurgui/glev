@@ -1,6 +1,7 @@
 {
     "title": "Guillaume Lévesque - Page personnelle",
     "experience.title" : "expérience",
+    "projet.title" : "projets",
     "menu" : {
       "home": "Accueil",
       "about": "à propos",
@@ -11,27 +12,19 @@
     "personalinfo.contact": "514.835.0203",
     "raic.period": "juin 2021 – aujourd’hui",
     "raic.role": "analyste programmeur desjardins",
-    "raic.details": [
-      "spécialisé en java (majoritairement spring boot), développement de services rest.",
-      "développement de services d’interaction et d’intégration devops (ci/cd -> docker/docker swarm, concourse pcf kubernetes), analyse de sécurité (crypto), automatisation de tests."
-    ],
+    "raic.details1": "spécialisé en java (majoritairement spring boot), développement de services rest.",
+    "raic.details2": "développement de services d’interaction et d’intégration devops (ci/cd -> docker/docker swarm, concourse pcf kubernetes), analyse de sécurité (crypto), automatisation de tests.",
     "code3.period": "novembre 2019 – juin 2021",
     "code3.role": "développeur de logiciel et devops code3",
-    "code3.details": [
-      "mise en place de ci/cd, installations et entretiens de serveurs (linux et mac), développement web (spring boot et liferay).",
-      "développement d’outils internes et de logiciel d’analytique. analyse de sécurité et mise à jour de sécurité."
-    ],
+    "code3.details1":"mise en place de ci/cd, installations et entretiens de serveurs (linux et mac), développement web (spring boot et liferay).",
+    "code3.details2": "développement d’outils internes et de logiciel d’analytique. analyse de sécurité et mise à jour de sécurité.",
     "opq.period": "mai 2014 – novembre 2019",
     "opq.role": "genius apple",
-    "opq.details": [
-      "service d’après vente, gestion du plancher (genius bar), réparation d’appareil (iphone, mac), formateur."
-    ],
+    "opq.details1": "service d’après vente, gestion du plancher (genius bar), réparation d’appareil (iphone, mac), formateur.",
     "desjardins.period": "2022 - aujourd'hui",
     "desjardins.role": "desjardins – consentement",
-    "desjardins.details": [
-      "développement d'un système de gestion de données à haute disponibilité et hyper efficace pour l'ensemble du mouvement desjardins.",
-      "réalisations incluent le développement d'une suite d'applications, web et api, l'analyse technique et fonctionnelle des besoins métier, la création d'un système de métriques, de traitements par lots, de systèmes rabbitmq, etc."
-    ],
+    "desjardins.details1": "développement d'un système de gestion de données à haute disponibilité et hyper efficace pour l'ensemble du mouvement desjardins.",
+    "desjardins.details2": "réalisations incluent le développement d'une suite d'applications, web et api, l'analyse technique et fonctionnelle des besoins métier, la création d'un système de métriques, de traitements par lots, de systèmes rabbitmq, etc.",
     "education.title": "éducation",
     "uqam.year": "2020",
     "uqam.degree": "baccalauréat en informatique",
@@ -70,6 +63,10 @@
             "description" : "Projet en cours de démarage qui vise à implémenter un jeu de choix batit avec Unity et C++."
         }
     },
+    "project.title": "projets majeurs",
+    "project.env": "environnement technologique",
+    "skills.liferay": "liferay",
+    "skills.oracle": "oracle",
     "project1.period": "juin 2020 - septembre 2020",
     "project1.name": "RAIC",
     "project1.detail1": "Création d’une plateforme web pour le guide des architectes canadiens.",
@@ -85,6 +82,14 @@
     "project4.period": "2022 - aujourd'hui",
     "project4.name": "Desjardins – Consentement",
     "project4.detail1": "Développement d'un système de gestion de données à haute disponibilité et hyper efficace pour l'ensemble du Mouvement Desjardins.",
-    "project4.detail2": "Réalisations incluent le développement d'une suite d'applications, web et API, l'analyse technique et fonctionnelle des besoins métier, la création d'un système de métriques, de traitements par lots, de systèmes RabbitMQ, etc."
+    "project4.detail2": "Réalisations incluent le développement d'une suite d'applications, web et API, l'analyse technique et fonctionnelle des besoins métier, la création d'un système de métriques, de traitements par lots, de systèmes RabbitMQ, etc.",
+    "contact.phrase": "Derrière chaque défi se cache une solution à découvrir. Trouvons-la ensemble.",
+    "contact.form.name": "nom complet",
+    "contact.form.email": "adresse courriel",
+    "contact.form.message": "message",
+    "contact.form.confirmation": "voulez vous envoyer le message? (o/N)",
+    "contact.form.prompt1" : "entrer votre nom complet et appuyez sur entrer:",
+    "contact.form.prompt2" : "entrer votre adresse courriel et appuyez sur entrer:",
+    "contact.form.prompt3" : "entrer votre message et appuyez sur entrer:"
   }
   

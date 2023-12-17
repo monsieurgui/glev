@@ -1,3 +1,17 @@
 .input-width {
     min-width: 40%;
 }
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    color: black; /* Adjust text color as needed */
+  }
+  
+  /* Additional styling for the blinking cursor */
+  input:focus {
+    caret-color: black; /* Color of the cursor */
+    font-weight: bold;
+  }

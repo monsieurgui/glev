@@ -1,16 +1,21 @@
-<div class="font-courier flex items-center justify-center pt-[8%] text-center w-full">
-    <span class="terminal-text">{{ "home.phrase" | translate }} </span>
+<!-- Container for Typing Animation -->
+<div class="font-courier flex items-center justify-center pt-[15%] pb-[15%] text-center w-full px-8 sm:pt-[7%] sm:pb-16">
+    <h4 class="typing-animation" [innerHTML]="displayedPhrase"></h4>
 </div>
 
-<div class="container mx-auto font-courier pt-[8%] pb-8">
-    <h2 class="text-2xl font-semibold uppercase text-center">Projets</h2>
+<!-- Container for Project Title -->
+<div class="container mx-auto font-courier sm:pt-2 pb-16">
+    <h2 class="text-2xl font-semibold uppercase text-center">{{ 'projet.title' | translate }}</h2>
 </div>
 
+<!-- Container for Project Items -->
 <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 font-courier items-stretch justify-items-stretch justify-content-center">
-    <a *ngFor="let project of projects" [href]="project.url" target="_blank" class="card shadow-lg p-4 pb-8 pr-8 relative hover:bg-gray-100 transition duration-200">
+    <a *ngFor="let project of projects" [href]="project.url" target="_blank" class="card shadow-lg p-2 sm:p-2 pb-4 sm:pb-4 pr-4 sm:pr-4 relative hover:bg-gray-100 transition duration-200 w-full">
         <span class="absolute bottom-2 right-2 text-black border border-black py-1 px-2 rounded-full">{{ project.lang }}</span>
         <img src="assets/img/github-logo.png" alt="GitHub Logo" class="w-8 h-8 absolute top-2 left-2">
-        <h3 class="pl-10 pt-6 font-semibold">{{ "home." + project.title | translate }}</h3>
-        <p class="pl-10 pt-2">{{ "home." + project.description | translate }}</p>
+        <div class="pl-10 pt-6 flex flex-col">
+            <h3 class="font-semibold">{{ "home." + project.title | translate }}</h3>
+            <p class="pt-2">{{ "home." + project.description | translate }}</p>
+        </div>
     </a>
 </div>

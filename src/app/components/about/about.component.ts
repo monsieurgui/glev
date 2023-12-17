@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+  raicDetails !: string[];
+  code3Details !: string[];
+  opqDetails !: string[];
+  desjardinsDetails !: string[];
+
+  constructor(private translate: TranslateService) {
+    this.translate.get('code3.details').subscribe((res: string[]) => {
+      this.code3Details = res;
+    });
+    this.translate.get('raic.details').subscribe((res: string[]) => {
+      this.raicDetails = res;
+    });
+    this.translate.get('opq.details').subscribe((res: string[]) => {
+      this.opqDetails = res;
+    });
+    this.translate.get('desjardins.details').subscribe((res: string[]) => {
+      this.desjardinsDetails = res;
+    });
+  }
 
 }
