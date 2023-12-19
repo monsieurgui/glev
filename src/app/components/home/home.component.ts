@@ -1,12 +1,15 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { Event as RouterEvent, NavigationEnd, Router } from '@angular/router';
-import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { LangChangeEvent, TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Dict } from 'src/app/constant/dict';
+import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: true,
+    imports: [NgFor, TranslateModule]
 })
 export class HomeComponent implements OnInit {
   constructor(private translate : TranslateService,
